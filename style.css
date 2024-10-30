@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*---------------------------------------------------------------
+        Estilo Global
+------------------------------------------------------------------ */
+* {
+    font-family: "tahoma", sans-serif;
+    margin: 0; 
+    padding: 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+html {
+    background: linear-gradient( to top , black , whitesmoke) ;
+    background-repeat: no-repeat;
+}
+
+h1 { font: 700 40px 'Oswald'; margin: 10px;}
+
+/*---------------------------------------------------------------
+        Conteúdo Principal
+------------------------------------------------------------------ */
+.conteúdo-principal {
+    background-color: whitesmoke;
+    max-width: 700px;
+    margin: 50px auto 0px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+    overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
+}
+
+/*---------------------------------------------------------------
+        Barra do Iphone
+------------------------------------------------------------------ */
+.barra-iphone {
+    background-color: black;
+    padding: 10px 30px;
+    display: flex;
+    gap: 5px;
+}
+.barra-iphone button {
+    cursor: default;
+    border: none;
+    border-radius: 20px;
+    width: 15px; height: 15px;
+}
+#botão-01 { background-color: red; }
+#botão-02 { background-color: orange; }
+#botão-03 { background-color: green; }
+
+/*---------------------------------------------------------------
+    Texto Apresentação - Seja bem vindo ao meu portfólio!
+------------------------------------------------------------------ */
+.texto-apresentação { margin: 0px 30px; }
+.texto-apresentação p { font-size: 18px; text-align: justify; text-indent: 30px; } 
+
+/*---------------------------------------------------------------
+    Dados Pessoais
+------------------------------------------------------------------ */
+.dados-pessoais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+
+.dados-pessoais img {
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.dados-pessoais ul li {
+    font-size: 20px;
+    list-style: none;
+    text-align: left;
+}
+/*----------------------------------------------------
+        Redes Sociais
+------------------------------------------------------ */
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 50px;
+}
+.redes-sociais img { width: 80px; filter: grayscale(80%); }
+.redes-sociais img:hover { filter: grayscale(40%); }
+
+/*----------------------------------------------------
+        Certificados
+------------------------------------------------------ */
+
+.certificados {
+    display: inline-block;
+    margin: auto;
+}
+.certificados a {
+    background-color: red; color: whitesmoke;
+    font: 900 1em 'Oswald';
+    text-decoration: none;
+    padding: 5px; border-radius: 5px 10px;
+}
+
+table {
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+
+td {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+
+/*----------------------------------------------------
+        Rodapé
+------------------------------------------------------ */
+.rodapé {
+    position: fixed;
+    bottom: 0%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rodapé img {
+    width: 40px;
+    filter: grayscale(80%);
+}
+
+/*---------------------------------------------------------------
+        Estilo Smartphone
+------------------------------------------------------------------ */
+
+@media ( max-width: 720px ) {
+    h1 { font-size: 38px; }
+    .conteúdo-principal { margin: 0px; border-radius: 0px; }
+    .barra-iphone { padding: 20px 30px; }
+    .dados-pessoais img { width: 250px; }
+    .redes-sociais img { width: 100px; }
+}
