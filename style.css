@@ -26,7 +26,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     background-color: whitesmoke;
     max-width: 700px;
     margin: 50px auto 0px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     padding-bottom: 50px;
     overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
 }
@@ -74,7 +74,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     margin-bottom: 10px;
 }
 .dados-pessoais ul li {
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     text-align: left;
 }
@@ -83,7 +83,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
         Certificados
 ------------------------------------------------------ */
 
-.certificados { display: inline-block; margin: auto; }
+.certificados { display: inline-block; margin: 0px auto 30px; }
 .certificados a {
      color: whitesmoke;
     font: 900 14px 'Oswald';
@@ -97,10 +97,30 @@ table { border: solid 1px black; overflow: hidden; }
 td { border: solid 1px black; padding: 10px; }
 
 /*----------------------------------------------------
+        Projetos
+------------------------------------------------------ */
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.projetos img{
+    width: 20px;
+    animation: engrenagem 2s linear infinite;
+}
+
+@keyframes engrenagem {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+/*----------------------------------------------------
         Redes Sociais
 ------------------------------------------------------ */
 .redes-sociais {
-    margin: 30px 0px 20px;
+    margin: 40px 0px 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -116,7 +136,7 @@ td { border: solid 1px black; padding: 10px; }
 .rodapé {
     position: fixed;
     bottom: 0%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.795) ;
     color: white;
     width: 100%;
     text-align: center;
