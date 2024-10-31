@@ -27,7 +27,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     max-width: 700px;
     margin: 50px auto 0px;
     border-radius: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
 }
 
@@ -99,16 +99,16 @@ td { border: solid 1px black; padding: 10px; }
 /*----------------------------------------------------
         Redes Sociais
 ------------------------------------------------------ */
-.redes-sociais { margin: 20px 0px; }
-.redes-sociais section {
+.redes-sociais {
+    margin: 30px 0px 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.redes-sociais section img { width: 80px; filter: grayscale(80%); }
-.redes-sociais section img:hover { filter: grayscale(40%); }
+.redes-sociais img { width: 50px; filter: grayscale(80%); }
+.redes-sociais img:hover { filter: grayscale(40%); }
 
 /*----------------------------------------------------
         Rodapé
@@ -141,5 +141,5 @@ td { border: solid 1px black; padding: 10px; }
     .conteúdo-principal { margin: 0px; border-radius: 0px; }
     .barra-iphone { padding: 20px 30px; }
     .dados-pessoais img { width: 250px; }
-    .redes-sociais section img { width: 80px; }
+    .redes-sociais img { width: 50px; }
 }
